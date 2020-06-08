@@ -32,7 +32,7 @@ namespace ClinicManagement.Core.ViewModel
         [Required]
         public int Doctor { get; set; }
 
-        public IEnumerable<Doctor> Doctors { get; set; }
+        public IEnumerable<Doktor> Doctors { get; set; }
         public string Heading { get; set; }
 
         public IEnumerable<Appointment> Appointments { get; set; }

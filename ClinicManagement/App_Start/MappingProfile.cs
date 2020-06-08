@@ -11,7 +11,7 @@ namespace ClinicManagement.App_Start
         {
             Mapper.CreateMap<Patient, PatientDto>();
             Mapper.CreateMap<City, CityDto>();
-            Mapper.CreateMap<Doctor, DoctorDto>();
+            Mapper.CreateMap<Doktor, DoctorDto>();
             Mapper.CreateMap<Specialization, SpecializationDto>();
             //Mapper.CreateMap<DoctorFormViewModel, Doctor>();
         }

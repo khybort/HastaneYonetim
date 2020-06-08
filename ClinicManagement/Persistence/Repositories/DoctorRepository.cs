@@ -15,7 +15,7 @@ namespace ClinicManagement.Persistence.Repositories
         }
 
 
-        public IEnumerable<Doctor> GetDectors()
+        public IEnumerable<Doktor> GetDectors()
         {
             return _context.Doctors
                 .Include(s => s.Specialization)
@@ -27,7 +27,7 @@ namespace ClinicManagement.Persistence.Repositories
         /// Get the available doctors
         /// </summary>
         /// <returns></returns>
-        public IEnumerable<Doctor> GetAvailableDoctors()
+        public IEnumerable<Doktor> GetAvailableDoctors()
         {
             return _context.Doctors
                 .Where(a => a.IsAvailable == true)
@@ -40,7 +40,7 @@ namespace ClinicManagement.Persistence.Repositories
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        public Doctor GetDoctor(int id)
+        public Doktor GetDoctor(int id)
         {
             return _context.Doctors
                 .Include(s => s.Specialization)
@@ -48,14 +48,14 @@ namespace ClinicManagement.Persistence.Repositories
                 .SingleOrDefault(d => d.Id == id);
         }
 
-        public Doctor GetProfile(string userId)
+        public Doktor GetProfile(string userId)
         {
             return _context.Doctors
                 .Include(s => s.Specialization)
                 .Include(u => u.Physician)
                 .SingleOrDefault(d => d.PhysicianId == userId);
         }
-        public void Add(Doctor doctor)
+        public void Add(Doktor doctor)
         {
             _context.Doctors.Add(doctor);
         }

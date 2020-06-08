@@ -23,7 +23,7 @@ namespace ClinicManagement.Core.ViewModel
         public int Specialization { get; set; }
 
         public IEnumerable<Specialization> Specializations { get; set; }
-        public IEnumerable<Doctor> Doctors { get; set; }
+        public IEnumerable<Doktor> Doctors { get; set; }
 
         public RegisterViewModel RegisterViewModel { get; set; }
 

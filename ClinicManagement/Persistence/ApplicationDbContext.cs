@@ -10,7 +10,7 @@ namespace ClinicManagement.Persistence
         public DbSet<Patient> Patients { get; set; }
         public DbSet<Appointment> Appointments { get; set; }
         public DbSet<Attendance> Attendances { get; set; }
-        public DbSet<Doctor> Doctors { get; set; }
+        public DbSet<Doktor> Doctors { get; set; }
         public DbSet<Specialization> Specializations { get; set; }
         public DbSet<City> Cities { get; set; }
         //public DbSet<PatientStatus> PatientStatus { get; set; }

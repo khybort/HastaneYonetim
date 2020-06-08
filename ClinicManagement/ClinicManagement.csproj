@@ -304,7 +304,7 @@
     <Compile Include="Core\ViewModel\AccountViewModels.cs" />
     <Compile Include="Persistence\ApplicationDbContext.cs" />
     <Compile Include="Core\Models\ApplicationUser.cs" />
-    <Compile Include="Core\Models\Doctor.cs" />
+    <Compile Include="Core\Models\Doktor.cs" />
     <Compile Include="Core\Models\Attendance.cs" />
     <Compile Include="Core\ViewModel\ManageViewModels.cs" />
     <Compile Include="Core\Models\Patient.cs" />

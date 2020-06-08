@@ -3,7 +3,7 @@ using System.Collections.ObjectModel;
 
 namespace ClinicManagement.Core.Models
 {
-    public class Doctor
+    public class Doktor
     {
         public int Id { get; set; }
         public string Name { get; set; }
@@ -15,7 +15,7 @@ namespace ClinicManagement.Core.Models
         public string PhysicianId { get; set; }
         public ApplicationUser Physician { get; set; }
         public ICollection<Appointment> Appointments { get; set; }
-        public Doctor()
+        public Doktor()
         {
             Appointments = new Collection<Appointment>();
         }

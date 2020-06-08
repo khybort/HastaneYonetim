@@ -3,7 +3,7 @@ using ClinicManagement.Core.Models;
 
 namespace ClinicManagement.Persistence.EntityConfigurations
 {
-    public class DoctorConfiguration : EntityTypeConfiguration<Doctor>
+    public class DoctorConfiguration : EntityTypeConfiguration<Doktor>
     {
         public DoctorConfiguration()
         {

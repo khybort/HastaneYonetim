@@ -211,7 +211,7 @@ namespace ClinicManagement.Controllers
                     UserManager.AddToRole(user.Id, RoleName.DoctorRoleName);
                   
 
-                    Doctor doctor = new Doctor()
+                    Doktor doctor = new Doktor()
                     {
                         Name = viewModel.Name,
                         Phone = viewModel.Phone,
